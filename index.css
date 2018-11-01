@@ -20,22 +20,29 @@ body {
   border-bottom: dashed 1px #262626;
   text-align: center;
 }
+.main-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .card {
   display: inline-block;
-  margin: 0.8rem;
-  padding: 1rem 3rem;
+  margin: 0.8rem 0rem;
+  padding: 0.2rem 0;
   text-align: center;
 }
 .card-body {
   background: #f5f6f9;
-  width: 20rem;
+  width: 18rem;
   height: 8rem;
   box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;
   transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0.2rem;
+  margin: 2rem 0;
+  border-radius: 4px;
 }
 .card-body:hover {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
@@ -164,3 +171,45 @@ body {
   color: #fff;
 }
 /*  Button Color Hover, Ends here  */
+
+/*  Button 3D Effect , Starts here  */
+.btn-2 {
+  transform-style: preserve-3d;
+  position: relative;
+  transition: transform 0.5s linear;
+  letter-spacing: 2px;
+  top: -32px;
+  color: transparent;
+  cursor: pointer;
+  margin: 2.5rem 1.5rem;
+}
+.btn-2::before,
+.btn-2::after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 15px 40px;
+  border: 3px solid #000;
+  transition: transform 0.5s linear;
+}
+.btn-2::before {
+  transform: translateX(-100%) rotateY(90deg);
+  transform-origin: right;
+  background: #000;
+  color: #fff;
+}
+.btn-2::after {
+  transform: translateX(0) rotateY(0deg);
+  transform-origin: left;
+  background: #fff;
+  color: #000;
+}
+.btn-2:hover:before {
+  transform: translateX(0) rotateY(0deg);
+}
+.btn-2:hover:after {
+  transform: translateX(100%) rotateY(90deg);
+}
+
+/*  Button 3D Effect , Ends here  */
