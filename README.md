@@ -1,1 +1,1 @@
-# mydailycode.github.io
+# https://sajadhamidgada.github.io/mydailycode/
