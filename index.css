@@ -213,3 +213,60 @@ body {
 }
 
 /*  Button 3D Effect , Ends here  */
+
+/* Progress Bar Effect code  , Starts here   */
+.progress-bar-wrapper {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bg-change 2s linear 3s infinite;
+}
+.progress-bar-1 {
+  height: 10px;
+  width: 80%;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress-bar-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  animation: progress-bar-1 2s linear 3s infinite;
+}
+
+@keyframes progress-bar-1 {
+  0% {
+    width: 0%;
+    background: rgb(224, 162, 47);
+  }
+  50% {
+    width: 70%;
+    background: rgba(67, 224, 230, 0.842);
+  }
+  100% {
+    width: 100%;
+    background: rgba(85, 86, 160, 0.767);
+  }
+}
+@keyframes bg-change {
+  0% {
+    background: rgb(224, 162, 47);
+  }
+  50% {
+    background: rgba(67, 224, 230, 0.842);
+  }
+  100% {
+    background: rgba(85, 86, 160, 0.767);
+  }
+}
+
+/*  Progress Bar Effect code , Ends here   */
