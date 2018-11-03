@@ -76,6 +76,47 @@ body {
 }
 /* Main Bouncing Loader code , Ends here  */
 
+/* Sound Beat Loader code  , Starts here */
+.sound {
+  width: 6px;
+  height: 0px;
+  border-radius: 10px;
+  background: #7983ff;
+  margin: 0px 3px;
+  animation: beat 0.8s infinite;
+}
+.sound:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.sound:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.sound:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.sound:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.sound:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.sound:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.sound:nth-child(8) {
+  animation-delay: 0.7s;
+}
+@keyframes beat {
+  0%,
+  100% {
+    height: 0;
+  }
+  50% {
+    height: 40px;
+  }
+}
+/*Sound Beat Loader code , Ends here */
+
 /* Main Donut spinner code  , Starts here  */
 .donut-spinner {
   border-radius: 50%;
