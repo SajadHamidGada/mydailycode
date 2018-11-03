@@ -214,7 +214,7 @@ body {
 
 /*  Button 3D Effect , Ends here  */
 
-/* Progress Bar Effect code  , Starts here   */
+/* Progress Bar code  , Starts here   */
 .progress-bar-wrapper {
   width: 80%;
   height: 80%;
@@ -269,4 +269,40 @@ body {
   }
 }
 
-/*  Progress Bar Effect code , Ends here   */
+/*  Progress Bar  code , Ends here   */
+
+/* Toggle Switch code  , Starts here  */
+.switch-check-1 {
+  width: 40px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.switch-check-1:after {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 18px;
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  transition: all 0.3s;
+}
+input[type="checkbox"]:checked + .switch-check-1:after {
+  transform: translateX(20px);
+}
+input[type="checkbox"]:checked + .switch-check-1 {
+  background-color: #7983ff;
+}
+.offscreen-checkbox-1 {
+  /* actual toggle switch, out of the flow of document and positions it far away from the view,
+   but does not hide it so it is accessible via keyboard and screen readers. */
+  position: absolute;
+  left: -9999px;
+}
+/* Toggle Switch code , Ends here  */
