@@ -164,6 +164,10 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.text-hover-underline:active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -427,8 +431,10 @@ input[type="checkbox"]:checked + .switch-check-1 {
   transform: translate(-50%, -50%);
   content: "\1F50D";
 }
-.search-box:hover .search-txt {
+.search-box:hover .search-txt,
+.search-box:active .search-txt {
   width: 180px;
   padding: 20px;
 }
+
 /* Search box hover code  , Ends here */
