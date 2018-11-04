@@ -181,7 +181,6 @@ body {
   padding: 15px;
   text-decoration: none;
   position: relative;
-  padding: 15px;
   font-size: 12px;
   letter-spacing: 1px;
   overflow: hidden;
@@ -255,6 +254,47 @@ body {
 
 /*  Button 3D Effect , Ends here  */
 
+/*  Button Text Hover code  , Starts here */
+.btn-3 {
+  display: inline-block;
+  border: 2px solid rgb(102, 248, 180);
+  text-decoration: none;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 200px;
+  height: 60px;
+  color: #262626;
+}
+.btn-3::before {
+  content: "Hover Over this inner Box";
+  position: absolute;
+  transform: translateY(-50%);
+  left: 18px;
+  top: 50%;
+  transition: all 0.5s;
+}
+.btn-3:hover:before {
+  top: -100%;
+}
+.btn-3::after {
+  content: "\1F494";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 140%;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+.btn-3:hover:after {
+  top: 50%;
+}
+
+/* Button Text Hover code , Ends here */
+
 /* Progress Bar code  , Starts here   */
 .progress-bar-wrapper {
   width: 80%;
@@ -322,6 +362,7 @@ body {
   display: inline-block;
   transition: all 0.3s;
   cursor: pointer;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 .switch-check-1:after {
   width: 18px;
