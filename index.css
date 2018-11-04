@@ -388,3 +388,47 @@ input[type="checkbox"]:checked + .switch-check-1 {
   left: -9999px;
 }
 /* Toggle Switch code , Ends here  */
+
+/* Search box hover code  , Starts here */
+.search-box {
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+.search-txt {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+  line-height: 40px;
+  font-size: 12px;
+  width: 0;
+  transition: all 0.25s;
+  color: #fff;
+}
+.search-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  color: #e84118;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+}
+
+.search-btn:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "\1F50D";
+}
+.search-box:hover .search-txt {
+  width: 180px;
+  padding: 20px;
+}
+/* Search box hover code  , Ends here */
